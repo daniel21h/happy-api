@@ -1,6 +1,10 @@
 import express from "express";
 
+import "./database/connection";
+
 const server = express();
+
+server.use(express.json());
 
 server.get("/", (request, response) => {
   return response.json({ message: "Hello World" });
