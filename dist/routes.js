@@ -11,7 +11,7 @@ const routes = express_1.Router();
 const upload = multer_1.default(upload_1.default);
 // Default routes
 routes.get(',', (request, response) => {
-    return response.json({ message: '🚀 Server running on port 3333.' });
+    return response.json({ message: '🚀 Server running on heroku.' });
 });
 routes.get("/orphanages", OrphanagesController_1.default.index);
 routes.get("/orphanages/:id", OrphanagesController_1.default.show);
