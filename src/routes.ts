@@ -8,7 +8,7 @@ const routes = Router();
 const upload = multer(uploadConfig);
 
 // Default routes
-routes.get(',', (request, response) => {
+routes.get('/', (request, response) => {
   return response.json({ message: '🚀 Server running on heroku.' })
 })
 

@@ -10,7 +10,7 @@ const OrphanagesController_1 = __importDefault(require("./controllers/Orphanages
 const routes = express_1.Router();
 const upload = multer_1.default(upload_1.default);
 // Default routes
-routes.get(',', (request, response) => {
+routes.get('/', (request, response) => {
     return response.json({ message: '🚀 Server running on heroku.' });
 });
 routes.get("/orphanages", OrphanagesController_1.default.index);
