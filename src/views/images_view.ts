@@ -4,7 +4,7 @@ export default {
   render(image: Image) {
     return {
       id: image.id,
-      url: `https://happy-server-nodejs.herokuapp.com/${image.path}`,
+      url: `http://localhost:3333/${image.path}`,
     };
   },
 
